@@ -1,0 +1,221 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid;
+}
+:root {
+  --light-greed: #9dbc98;
+  --greed: #2caeb2;
+  --blue: #0eb2e8;
+  --pink: #d63484;
+  --light-pink: #ff9bd2;
+  --blue: #525ceb;
+  --purple: #a82cde;
+  --yellow: #f8e559;
+  --grey: #ccc;
+}
+body {
+  font-size: 2rem;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.padre1 {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 4px #a82cde;
+  background-color: var(--light-greed);
+  height: 300px;
+  gap: 20px;
+  padding: 10px;
+}
+.hijo:nth-child(1) {
+  width: 300px;
+  font-size: 2rem;
+
+  background: var(--grey);
+}
+
+.hijo:nth-child(2) {
+  background-color: var(--light-pink);
+  width: 100%;
+  font-size: 2rem;
+  border: 1px solid var(--grey);
+}
+.hijo:nth-child(3) {
+  flex: 6;
+  width: 100%;
+  background-color: var(--greed);
+  border: 1px solid rgb(171, 117, 17);
+}
+.hijo:nth-child(4) {
+  flex: 6;
+  width: 300px;
+  background-color: #8dd6ea;
+  border: 3px solid rgb(224, 92, 25);
+}
+/* Contenedor dos PADRE2 */
+
+.padre2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 4px #10acd7;
+  height: 300px;
+  gap: 20px;
+  background-color: var(--light-greed);
+  /* Diferencia */
+  /* margin: 20px; */
+  padding: 20px;
+}
+.hijo1 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #8dd6ea;
+  border: 3px solid var(--greed);
+}
+
+.hijo2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: var(--light-pink);
+  border: 3px solid var(--greed);
+}
+.hijo3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color:var(--yellow);
+  border: 3px solid var(--greed);
+}
+
+.hijo4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: var(--blue);
+  border: 3px solid var(--greed);
+}
+/* Padre 3 */
+.padre3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 4px #10acd7;
+  height: 500px;
+  background-color: var(--light-greed);
+  gap: 20px;
+  padding: 20px;
+}
+.hijos:nth-child(1) {
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 300px;
+  background-color: var(--light-pink);
+  border: 3px solid var(--pink);
+}
+.hijos:nth-child(2) {
+  flex: 6;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--light-pink);
+  border: 3px solid var(--pink);
+}
+.hijos:nth-child(3) {
+  flex: 6;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #8dd6ea;
+  border: 3px solid rgb(224, 92, 25);
+}
+.hijos:nth-child(4) {
+  flex: 6;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #8dd6ea;
+  border: 3px solid rgb(224, 92, 25);
+}
+.padre4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  border: solid 4px var(--purple);
+  height: 300px;
+  gap: 20px;
+  /* Diferencia */
+  /* margin: 20px; */
+  padding: 20px;
+  background-color: var(--light-greed);
+}
+.hijitos:nth-child(1) {
+  flex: 6;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  border: 2px solid var(--blue);
+}
+.hijitos:nth-child(2) {
+  flex: 6;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  border: 2px solid var(--blue);
+}
+
+.hijitos:nth-child(3) {
+  flex: 6;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  border: 2px solid var(--blue);
+}
+.hijitos:nth-child(4) {
+  flex: 6;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  border: 2px solid var(--blue);
+}
+.codigo-sagrdo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
